@@ -107,7 +107,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     student.idGroup = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_ID_GROUP));
                     student.FirstName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_FIRST_NAME));
                     student.LastName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_LAST_NAME));
-                    student.id = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_AGE));
+                    student.Age = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_AGE));
 
                     students.add(student);
 
