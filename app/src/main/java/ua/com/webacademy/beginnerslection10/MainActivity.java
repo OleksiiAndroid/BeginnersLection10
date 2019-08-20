@@ -25,7 +25,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -192,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
 
             File file = new File(folder, fileName);
 
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF8"));
 
             writer.write(data);
             writer.flush();
